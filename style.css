@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas: 'sedan suvs luxury';
+    margin: auto;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+    height: 300px;
+    width: 150px;
+}
+.sedan{
+    background-color: hsl(31, 77%, 54%);
+  grid-area: sedan;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    grid-area: suvs;
+}
+.suvs h2{
+    margin: 1.5em;
+}
+.suvs p{
+    height: 60px;
+}
+.suvs button{
+    margin: 6em 0em;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    grid-area: luxury;
+}
+img{
+    float: left;
+}
+button{
+margin: 2em 0em;
+padding: 0.5em;
+border-radius: 20px;
+border: none; 
+width: 100px;
+}
+main p{
+    margin: 2em 0em;
+}
+@media screen and (max-width: 992px){
+*{
+    padding: 0;
+}
+body {
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    place-items: center;
+    height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas: 'sedan suvs luxury';
+    margin: auto;
+}
+.suvs button{
+    margin: 15em 0em;
+}
+button{
+    margin: 3em 0em;
+    padding: 0.5em;
+    border-radius: 20px;
+    border: none;
+    width: 90px;
+}
+main div{
+    padding: 1.4em;
+    text-align: center;
+    height: 450px !important;
+    width: 75px !important;
+}
+.suvs p{
+    height: 60px;
+}
+}
